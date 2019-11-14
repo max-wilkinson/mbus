@@ -1,0 +1,23 @@
+{
+  "name": "mbus",
+  "version": "1.0.0",
+  "description": "A library for accessing University of Michigan bus data",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p ./",
+    "start": "ts-node src/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "Max Wilkinson",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.5.0",
+    "typescript": "^3.7.2"
+  }
+}
