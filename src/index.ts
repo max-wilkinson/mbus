@@ -16,3 +16,5 @@ const stopClient = new StopClient();
 stopClient.GetStops().then(stops => {
   // console.log(stops);
 });
+
+export { RouteClient, EtaClient, StopClient };
