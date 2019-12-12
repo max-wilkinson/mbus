@@ -12,7 +12,7 @@ This module exports clients for Etas, Routes, and Stops.
 
 ## Requirements
 
-This module depends on the [Request Promise Native library](https://www.npmjs.com/package/request-promise-native).
+This module was designed to be as light and simple as possible. As such, it has no dependencies.
 
 ## Release Notes
 
