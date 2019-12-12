@@ -1,6 +1,6 @@
 {
   "name": "mbus.umich",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A library for accessing University of Michigan bus data",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,9 +26,9 @@
   "devDependencies": {
     "@types/jest": "^24.0.23",
     "jest": "^24.9.0",
-    "ts-jest": "^24.1.0",
-    "ts-node": "^8.5.0",
-    "typescript": "^3.7.2"
+    "ts-jest": "^24.2.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
   },
   "dependencies": {
     "@types/request-promise-native": "^1.0.17",
