@@ -1,4 +1,4 @@
-import * as request from 'request-promise-native';
+import request from 'request-promise-native';
 import Route from './Route';
 
 export default class RouteClient {

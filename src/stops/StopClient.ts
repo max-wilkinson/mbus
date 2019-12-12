@@ -1,4 +1,4 @@
-import * as request from 'request-promise-native';
+import request from 'request-promise-native';
 import RouteClient from '../routes/RouteClient';
 import Route from '../routes/Route';
 import Stop from './Stop';
