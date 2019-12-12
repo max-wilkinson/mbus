@@ -1,17 +1,15 @@
-import request from 'request-promise-native';
+import getAsync from '../HttpAsync';
 import RouteClient from '../routes/RouteClient';
 import Route from '../routes/Route';
 import Stop from './Stop';
 
 export default class StopClient {
-  private readonly url = 'http://mbus.doublemap.com/map/v2/stops';
+  private readonly url = new URL('http://mbus.doublemap.com/map/v2/stops');
   private readonly routeClient = new RouteClient();
 
   public async GetStops() {
     const routes = await this.routeClient.GetRoutes();
-
-    const response = await request.get(this.url);
-    const stops = JSON.parse(response);
+    const stops = await getAsync(this.url);
 
     return this.filterStops(stops, routes);
   }

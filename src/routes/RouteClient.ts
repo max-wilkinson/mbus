@@ -1,11 +1,10 @@
-import request from 'request-promise-native';
+import getAsync from '../HttpAsync';
 import Route from './Route';
 
 export default class RouteClient {
-  private readonly url = 'http://mbus.doublemap.com/map/v2/routes';
+  private readonly url = new URL('http://mbus.doublemap.com/map/v2/routes');
 
   public async GetRoutes(): Promise<Route[]> {
-    const response = await request.get(this.url);
-    return Promise.resolve(JSON.parse(response));
+    return await getAsync(this.url);
   }
 }
