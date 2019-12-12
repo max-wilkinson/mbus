@@ -22,6 +22,10 @@ This module is in public beta. We are hard at work creating the best experience 
 
 Initial release of mbus npm module
 
+### 0.0.4
+
+Removed dependency on request library
+
 ## License
 
 The mbus npm module is licensed under the Apache License 2.0. See [LICENSE](LICENSE) for details.
