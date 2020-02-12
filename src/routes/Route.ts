@@ -5,4 +5,7 @@ export default interface Route {
   description?: string;
   color?: string;
   active?: boolean;
+  start_time?: string;
+  end_time?: string;
+  path?: number[];
 }
